@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar__left img{
+    height: 50px;
+    width: 50px;
+}
+
+.navbar__left{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.navbar__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.navbar__right img{
+    width: 20px;
+}
+
+.navbar__right__span{
+    background-color: cadetblue;
+    width: 2px;
+    height: 25px;
+}
+
+.navbar__right__account{
+    background-color: black;
+    color: white;
+    border: solid black 1px;
+    border-radius: 40px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.location__title{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 70px;
+}
+
+/* FACILITIES */
+
+.facilities__card {
+    padding: 5px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+
+.facilities__card img{
+    width: 25px;
+    vertical-align: middle;
+}
+
+.facilities__card__title:hover{
+  border-bottom:solid black 2px;
+  margin-bottom:3px;
+  display:block;
+  border-width:2px;
+}
+
+/* SEARCHBAR */
+
+.searchbar{
+    padding: 10px;
+    margin-top: 30px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 300px;
+    gap: 10%;
+    align-items: center;
+}
+
+.searchbar input{
+    border: none;
+    width: 60%;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.searchbar:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.searchbar__title{
+    padding: 10px;
+    background-color: #34E0A1; 
+    border-radius: 30px;
+    color: black;
+    font-size: larger;
+
+}
+/* GOOGLE LOCATED */
+
+.located__img{
+    margin-top: 30px;
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 10px;
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.located{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.located__title{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+.located__title__button{
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    vertical-align: middle;
+}
+
+.located__title__button:hover{
+    cursor: text;
+}
+.located__title__name{
+    color: #301D49;
+    font-size: 60px;
+}
+
+.located__title__exp{
+    color: #301D49;
+    font-size: 30px;
+}
+
+.located__title__ai{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #301D49;
+    color: white;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 200px;
+}
+
+.located__title__ai:hover{
+    background-color: #52327C;
+}
+.located__title__ai img{
+    background-color: transparent;
+   vertical-align: middle; 
+}
+/* TOPICS ADVENTURE */
+.Adventure{
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: large;
+}
+.adventure__image{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* overflow-x: hidden; */
+}
+
+/* remove scrollbar by which are the browser are using webkit. */
+.adventure__image::-webkit-scrollbar{
+    display: none;
+}
+.adventure__img{
+    position: relative;
+    margin-top: 20px;
+}
+.adventure__img p{
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+}
+
+.adventure__img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.adventure__desc , .tripadvisor__desc, .adventure__desc{
+    padding-top: 10px;
+}
+
+.places{
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+}
+
+.places::-webkit-scrollbar{
+    overflow: hidden;
+}
+
+.places__img img{
+    border-radius: 10px;
+}
+
+.places__img__dot{
+    color: #00AA6C;
+}
+
+.places__img__dott{
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    
+}
+
+.places__img__dot{
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+}
+
+.tripadvisor{
+    margin-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: large;
+}
+
+.places__img{
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.places__img__heart{
+    position: absolute;
+    top: 10px;
+    left: 250px;
+}
+
+.places__seller{
+    border: solid black 1px;
+    width: 40%;
+}
+
+.places__like{
+    border: solid black 1px;
+    width: 60%;
+}
+
+/* IDEEAS */
+.ideas{
+    margin-top: 20px;
+    background-color: #FAF1ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.ideas__img{
+    border: solid black 1px;
+    border-radius: 10px;
+    position: absolute;
+    left: 200px;
+    bottom: 50px;
+    transform: rotate(190deg);
+}
+
+.ideas__title{
+    float: right;
+}
+
+.ideas__button{
+    position: absolute;
+    background-color: grey;
+    color: black;
+    padding: 10px;
+    border-radius: 30px;
+    bottom: 30px;
+    right: 10px;
+}
+
+.ideas__button:hover{
+    cursor: pointer;
+}
+.ideas__desc{
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    left: 420px;
+    bottom: 130px;
+}
+
+.explore{
+    background-color: #FAF1ED;
+    margin-top: 80px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+.explore__picture{
+    overflow: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+   
+}
+
+.explore__picture::-webkit-scrollbar{
+    display: none;
+}
+
+.explore__image{
+    padding: 30px;
+    position: relative;
+    margin-top: 20px;
+}
+.explore__img__heart{
+    position: absolute;
+    top: 40px;
+    left:350px;
+}
+
+.explore__title{
+    padding-top: 20px;
+}
+
+.image__desc{
+    text-align: center;
+}
+
+.sponsored{
+    background-color: #FAF1ED;
+    margin: 30px 100px 30px 100px;
+    display: flex;
+    padding: 40px;
+}
+
+.sponsored__texts{
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 100px;
+}
+
+.sponsored__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.sponsered__desc{
+    font-weight: lighter;
+    font-size: large;
+}
+
+.sponsered__button{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.title{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.rentals{
+    margin: 40px;
+    padding: 30px;
+    position: relative;
+}
+
+.rental__image{
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+
+.rental__image::-webkit-scrollbar{
+    display: none;
+}
+
+.rental__img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.rentals__title{
+    position: absolute;
+    top: 30px;
+}
+
+.rentals__desc{
+    position: absolute;
+    top: 100px;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    width: 300px;
+}
+
+.rental__count{
+    vertical-align: bottom;
+}
+
+
+.footer{
+    margin-top: 20px;
+    background-color: #FAF1ED;
+    color: black;
+    padding: 5px;
+    gap: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.footer__one{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer__one p{
+    margin-top: 10px;
+}
+.footer__two{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__three{
+    position: relative;
+}
+.footer__title{
+    position: absolute;
+    right: 0px;
+    left: 100px;
+    
+}
+
+.footer__desc{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 30px;
+    align-items: center;
+}
